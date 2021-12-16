@@ -97,7 +97,7 @@ public class CuestionarioDAO {
 
         conn = conexion.getConnection();
         try {
-            String sql = "SELECT id, nombre FROM cuestionario where creador = " + creador;
+            String sql = "SELECT id, nombre FROM cuestionario where creador = " + "'"+ creador + "'";
             stm = conn.createStatement();
             rs = stm.executeQuery(sql);
             while (rs.next()){

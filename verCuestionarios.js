@@ -27,3 +27,11 @@ axios.get("http://localhost:4567/asignacionPorUsuario?idUsuario=" + idUsuario)
             }
         }
     }) 
+
+    function botonLista(id,nombre){
+        let params = new URLSearchParams();
+        params.append("idCuestionario", id);
+        params.append("nombre", nombre);
+        params.append("idUsuario", idUsuario);
+        window.location= "http://127.0.0.1:5500/contestar.html?" + params; 
+    }

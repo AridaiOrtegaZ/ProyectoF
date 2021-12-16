@@ -4,15 +4,16 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexion {
-    private String url = "jdbc:mysql://localhost:3306/cuestionarios";
+    /*private String url = "jdbc:mysql://localhost:3306/cuestionarios";
     private String username = "root";
     private String password = "";
-    private String driverName = "com.mysql.jdbc.Driver";
+    private String driverName = "com.mysql.jdbc.Driver";*/
 
-   /* private String url = "jdbc:mysql://db4free.net:3306/cuestionarios?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false";
+    private String url = "jdbc:mysql://db4free.net:3306/cuestionarios?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false";
     private String username = "equipo7sw";
     private String password = "equipo7sw";
-    private String driverName = "com.mysql.jdbc.Driver";*/
+    private String driverName = "com.mysql.jdbc.Driver";
+
     public Connection getConnection() {
         Connection conn = null;
         try {
